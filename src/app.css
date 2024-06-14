@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "Haas";
+    src: url("/NeueHaasDisplay-Roman.woff") format("woff");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Haas";
+    src: url("/NeueHaasDisplay-Bold.woff") format("woff");
+    font-weight: bold;
+
+}

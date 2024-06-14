@@ -2,7 +2,7 @@
 	export let companyName = 'Studio Web24';
 </script>
 
-<footer class="ml-2 mt-20 mb-10 flex content-center">
+<footer class="ml-2 mt-20 mb-10 flex content-center font-haas">
 	<div class="mx-auto">
 		<div class="w-20 md:w-20 my-3 mx-auto">
 			<img src="/leclogo.png" alt="Logo" />

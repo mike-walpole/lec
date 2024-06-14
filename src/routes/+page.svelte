@@ -7,15 +7,15 @@
 
 <div class="flex flex-col max-w-5xl mx-auto mb-20">
 	<img src="Stclareslogo.png" class="w-48 mx-auto" alt="logo" />
-	<h1 class="mx-auto text-6xl">St Clare's, Wielka Brytania</h1>
+	<h1 class="mx-auto text-6xl font-bold font-haas ml-5">St Clare's, Oxford, Wielka Brytania</h1>
 </div>
 
-<div class="grid md:grid-cols-2 gap-0 md:items-center max-w-5xl mx-auto">
-	<div class="">
+<div class="grid md:grid-cols-2 gap-0 md:items-center auto-rows-auto max-w-5xl mx-auto font-haas">
+	<div class=" self-stretch">
 		<img src="/one.avif" alt="hero" class="w-full h-full object-cover" />
 	</div>
-	<div class="mx-5">
-		<h2 class="text-2xl font-bold font-body mb-10 pt-5">Pierwsza szkoła z IB w Anglii</h2>
+	<div class="mx-5 self-stretch">
+		<h2 class="text-2xl font-bold font-body mb-10 pt-10">Pierwsza szkoła z IB w Anglii</h2>
 		<p class="text-xl font-body mb-10">
 			Szkoła z internatem w Oxfordzie to wyjątkowa placówka edukacyjna, która odgrywa kluczową rolę
 			w kształtowaniu przyszłych liderów i wybitnych studentów. Już od 1977 roku prowadzi ona
@@ -28,12 +28,12 @@
 	</div>
 </div>
 
-<div class="grid md:grid-cols-2 gap-0 md:items-center max-w-5xl mx-auto">
-	<div class="md:order-2 border border-black">
-		<img src="/three.avif" alt="hero" class="w-full object-cover" />
+<div class="grid md:grid-cols-2 gap-0 md:items-center auto-rows-auto max-w-5xl mx-auto font-haas">
+	<div class="md:order-2 self-stretch">
+		<img src="/three.avif" alt="hero" class="w-full h-full object-cover" />
 	</div>
-	<div class="md:order-1 mx-5">
-		<h2 class="text-2xl font-bold font-body mb-10 pt-5">Międzynarodowy charakter szkoły</h2>
+	<div class="md:order-1 mx-5 self-stretch">
+		<h2 class="text-2xl font-bold font-body mb-10 pt-10">Międzynarodowy charakter szkoły</h2>
 		<p class="text-xl font-body mb-10">
 			Ponad połowa absolwentów tej szkoły dostaje się na najbardziej prestiżowe uniwersytety w
 			Wielkiej Brytanii oraz Stanach Zjednoczonych, co świadczy o doskonałym przygotowaniu do
@@ -46,12 +46,12 @@
 	</div>
 </div>
 
-<div class="grid md:grid-cols-2 gap-0 max-w-5xl mx-auto">
-	<div class="">
+<div class="grid md:grid-cols-2 gap-0 max-w-5xl mx-auto auto-rows-auto font-haas">
+	<div class="self-stretch">
 		<img src="/St-Clares-1.avif" alt="hero" class="w-full h-full object-cover" />
 	</div>
-	<div class="mx-5">
-		<h2 class="text-2xl font-bold font-body mb-10 pt-5">Tradycja z nowoczesnym podejściem</h2>
+	<div class="mx-5 self-stretch">
+		<h2 class="text-2xl font-bold font-body mb-10 pt-10">Tradycja z nowoczesnym podejściem</h2>
 		<p class="text-xl font-body mb-10">
 			Szkoła z internatem w Oxfordzie to miejsce, które łączy tradycję z nowoczesnym podejściem do
 			edukacji, oferując uczniom nie tylko doskonałe przygotowanie akademickie, ale także możliwość
@@ -62,10 +62,10 @@
 	</div>
 </div>
 
-<div class="flex mx-auto w-[50vw]">
+<div class="flex mx-auto w-full md:w-[50vw] font-haas">
 	<button
-		class=" border hover:border-black py-2 px-4 bg-[#e60000] text-white hover:bg-white hover:text-black mx-auto w-full mt-20"
-		>skontaktuj się</button
+		class=" border hover:border-black py-2 px-4 bg-[#e60000] text-white hover:bg-white hover:text-black mx-5 w-full mt-20"
+		>Zamów konsultację</button
 	>
 </div>
 

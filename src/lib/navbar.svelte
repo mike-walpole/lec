@@ -7,10 +7,10 @@
 </script>
 
 <div>
-	<div class="font-body text-md">
+	<div class="font-haas text-md">
 		<nav class="container px-6 py-8 mx-auto md:flex md:justify-between md:items-center">
 			<div class="flex items-center justify-between">
-				<a class=" w-16 md:w-36 font-bold" href="/">
+				<a class=" w-16 md:w-24 font-bold" href="/">
 					<img src="/leclogo.png" alt="logo" />
 				</a>
 				<!-- Mobile menu button -->
