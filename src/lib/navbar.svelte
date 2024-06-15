@@ -47,7 +47,7 @@
 
 				<div class="space-y-2">
 					<a
-						href="mailto:krzysztof@lec.com.pl"
+						href="mailto:krzysztof.banaszak@lec.com.pl"
 						class="block bg-[#e60000] hover:bg-white hover:text-black text-white border hover:border-black py-2 px-4 rounded text-center"
 						>Zamów konsultację</a
 					>

@@ -11,11 +11,13 @@
 			<a href="/privacy-policy" class="mr-6">Polityka prywatności</a>
 			<a href="/terms" class="mx-6">Warunki</a>
 		</div>
-		<div>
-			<p>NIP 5841032403 REGON 190590830 TEL +48 555 555 555</p>
+		<div class="flex flex-col items-center">
+			<p>NIP 5841032403</p>
+			<p>REGON 190590830</p>
+			<p>TEL +48 555 555 555</p>
 		</div>
 
-		<div class="text-gray-400 text-center">
+		<div class="text-gray-400 text-center mt-5">
 			<a href="https://www.web24.studio">Designed by {companyName}</a>
 		</div>
 	</div>

@@ -63,9 +63,10 @@
 </div>
 
 <div class="flex mx-auto w-full md:w-[50vw] font-haas">
-	<button
-		class=" border hover:border-black py-2 px-4 bg-[#e60000] text-white hover:bg-white hover:text-black mx-5 w-full mt-20"
-		>Zamów konsultację</button
+	<a
+		href="mailto:krzysztof.banaszak@lec.com.pl"
+		class=" border hover:border-black py-2 px-4 bg-[#e60000] text-white hover:bg-white hover:text-black mx-5 w-full mt-20 text-center"
+		>Zamów konsultację</a
 	>
 </div>
 
