@@ -1,13 +1,10 @@
 <script>
-	import Navbar from '$lib/navbar.svelte';
-	import Footer from '../lib/footer.svelte';
+	export let data;
 </script>
 
-<Navbar />
-
-<div class="flex flex-col max-w-5xl mx-auto mb-20 pl-5">
+<div class="flex flex-col max-w-5xl mx-auto mb-20">
 	<img src="Stclareslogo.png" class="w-48 mx-auto" alt="logo" />
-	<h1 class="mx-auto text-6xl font-bold font-haas">St Clare's, Wielka Brytania</h1>
+	<h1 class="mx-auto text-6xl font-bold font-haas ml-5">{data.nazwa}</h1>
 </div>
 
 <div class="grid md:grid-cols-2 gap-0 md:items-center auto-rows-auto max-w-5xl mx-auto font-haas">
@@ -69,5 +66,3 @@
 		>Zamów konsultację</a
 	>
 </div>
-
-<Footer />
