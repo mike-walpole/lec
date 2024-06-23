@@ -37,6 +37,7 @@
 		"@sanity/image-url": "^1.0.2",
 		"@vercel/speed-insights": "^1.0.1",
 		"groq": "^3.21.0",
-		"sitemap": "^7.1.1"
+		"sitemap": "^7.1.1",
+		"svelte-vertical-timeline": "^1.0.2"
 	}
 }
