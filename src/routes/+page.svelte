@@ -2,6 +2,7 @@
 	import { ArrowRightOutline } from 'flowbite-svelte-icons';
 	import { CalendarWeekSolid } from 'flowbite-svelte-icons';
 	import Navbar from '../lib/navbar.svelte';
+	import Footer from '../lib/footer.svelte';
 	import { Rating, AdvancedRating, ScoreRating } from 'flowbite-svelte';
 	import { Card } from 'flowbite-svelte';
 	import {
@@ -35,7 +36,7 @@
 
 <div class="relative">
 	<!-- Image container -->
-	<img src="/hughs.avif" alt="Your Image" class="block w-full grayscale" />
+	<img src="/hughs.avif" alt="Your Image" class="block w-full grayscale-0" />
 
 	<div class="absolute flex top-0 z-50">
 		<Navbar />
@@ -55,50 +56,50 @@
 
 <div class="grid grid-cols-1 md:grid-cols-2 max-w-5xl mx-auto mt-20">
 	<div
-		class="border border-black p-2 h-64 flex flex-col justify-between shadow-lg mx-5 my-5 rounded"
+		class="border border-gray-200 p-2 h-64 flex flex-col justify-between shadow-lg mx-5 my-5 rounded"
 	>
 		<div class="w-11/12 mx-auto mt-3">
 			<h2 class="font-sadiq">Studia</h2>
 			<p>Studia za granica sa lorem ipsum</p>
 		</div>
 		<a
-			class="bg-black text-white font-sadiq text-center py-2 mb-3 w-11/12 mx-auto hover:border hover:border-black hover:text-black hover:bg-white"
+			class="bg-black text-white font-sadiq text-center py-2 mb-3 w-11/12 mx-auto hover:border hover:border-gray-200 hover:text-black hover:bg-white"
 			>dowiedz się wiecej</a
 		>
 	</div>
 	<div
-		class="border border-black p-2 h-64 flex flex-col justify-between shadow-lg mx-5 my-5 rounded"
+		class="border border-gray-200 p-2 h-64 flex flex-col justify-between shadow-lg mx-5 my-5 rounded"
 	>
 		<div class="w-11/12 mx-auto mt-3">
 			<h2 class="font-sadiq">Szkoly średnie</h2>
 			<p>Studia za granica sa lorem ipsum</p>
 		</div>
 		<a
-			class="bg-black text-white font-sadiq text-center py-2 mb-3 w-11/12 mx-auto hover:border hover:border-black hover:text-black hover:bg-white"
+			class="bg-black text-white font-sadiq text-center py-2 mb-3 w-11/12 mx-auto hover:border hover:border-gray-200 hover:text-black hover:bg-white"
 			>dowiedz się wiecej</a
 		>
 	</div>
 	<div
-		class="border border-black p-2 h-64 flex flex-col justify-between shadow-lg mx-5 my-5 rounded"
+		class="border border-gray-200 p-2 h-64 flex flex-col justify-between shadow-lg mx-5 my-5 rounded"
 	>
 		<div class="w-11/12 mx-auto mt-3">
 			<h2 class="font-sadiq">Kursy dla profesjonalistów</h2>
 			<p>Studia za granica sa lorem ipsum</p>
 		</div>
 		<a
-			class="bg-black text-white font-sadiq text-center py-2 mb-3 w-11/12 mx-auto hover:border hover:border-black hover:text-black hover:bg-white"
+			class="bg-black text-white font-sadiq text-center py-2 mb-3 w-11/12 mx-auto hover:border hover:border-gray-200 hover:text-black hover:bg-white"
 			>dowiedz się wiecej</a
 		>
 	</div>
 	<div
-		class="border border-black p-2 h-64 flex flex-col justify-between shadow-lg mx-5 my-5 rounded"
+		class="border border-gray-200 p-2 h-64 flex flex-col justify-between shadow-lg mx-5 my-5 rounded"
 	>
 		<div class="w-11/12 mx-auto mt-3">
 			<h2 class="font-sadiq">Kursy dla młodzieźy</h2>
 			<p>Studia za granica sa lorem ipsum</p>
 		</div>
 		<a
-			class="bg-black text-white font-sadiq text-center py-2 mb-3 w-11/12 mx-auto hover:border hover:border-black hover:text-black hover:bg-white"
+			class="bg-black text-white font-sadiq text-center py-2 mb-3 w-11/12 mx-auto hover:border hover:border-gray-200 hover:text-black hover:bg-white"
 			>dowiedz się wiecej</a
 		>
 	</div>
@@ -210,7 +211,7 @@
 	</h3>
 </div>
 
-<div class="mb-20 max-w-5xl">
+<div class="mx-5 mb-20 max-w-5xl hidden md:block">
 	<Timeline>
 		{#each options as option}
 			<TimelineItem>
@@ -229,6 +230,66 @@
 	</Timeline>
 </div>
 
+<div class="mx-5 md:hidden">
+	{#each options as option}
+		<h3 class="font-sadiq text-lg">{option.title}</h3>
+		<p class="mb-10">{option.content}</p>
+	{/each}
+</div>
+
 <div class="max-w-5xl mx-auto mt-20 mb-10">
 	<h2 class="mx-5 md:mx-0 font-sadiq text-4xl">Co na tym zyskam?</h2>
 </div>
+
+<div class="grid grid-cols-1 md:grid-cols-3 max-w-5xl mx-auto">
+	<div
+		class="border border-gray-200 p-2 h-64 flex flex-col justify-between shadow-lg mx-5 my-5 rounded"
+	>
+		<img src="/icons8-communication-100.png" alt="comms" class="w-24 mx-auto mt-10" />
+		<div class="w-11/12 mx-auto mt-3">
+			<h2 class="font-sadiq">Lepsza komunikacja</h2>
+			<p>Studia za granica sa lorem ipsum</p>
+		</div>
+	</div>
+	<div
+		class="border border-gray-200 p-2 h-64 flex flex-col justify-between shadow-lg mx-5 my-5 rounded"
+	>
+		<img src="/icons8-agree-100.png" alt="comms" class="w-24 mx-auto mt-10" />
+		<div class="w-11/12 mx-auto mt-3">
+			<h2 class="font-sadiq">Większe zrozumienie</h2>
+			<p>Studia za granica sa lorem ipsum</p>
+		</div>
+	</div>
+	<div
+		class="border border-gray-200 p-2 h-64 flex flex-col justify-between shadow-lg mx-5 my-5 rounded"
+	>
+		<img src="/icons8-self-confidence-64.png" alt="comms" class="w-24 mx-auto mt-10" />
+		<div class="w-11/12 mx-auto mt-3">
+			<h2 class="font-sadiq">Pewność siebie</h2>
+			<p>Studia za granica sa lorem ipsum</p>
+		</div>
+	</div>
+</div>
+
+<div class="max-w-5xl mx-auto mt-20 mb-10">
+	<h2 class="mx-5 md:mx-0 font-sadiq text-4xl">Doświadczenie godne zaufania</h2>
+</div>
+
+<div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2">
+	<img src="/maria.avif" alt="maria" class="mx-auto px-5" />
+	<div class="mx-5">
+		<p class="mb-3">LEC Centre to rodzinna firma, którą stworzyłam z pasji do języków obcych.</p>
+		<p class="mb-3">
+			Od ponad 30 lat uczę angielskiego. Kiedy na początku lat 90. XX wieku pojechałam na kurs do
+			Londynu, poczułam jakie postępy można zrobić mając ciągły kontakt z językiem obcym. Po
+			powrocie z tego wyjazdu postanowiłam umożliwić innym skorzystanie z możliwości, jakie daje
+			nauka za granicą. Od 1993 roku pomogliśmy setkom Klientów lepiej poznać języki obce, a dzięki
+			temu lepiej rozumieć świat.
+		</p>
+		<p class="mb-3">
+			Mam nadzieję, że zainspirujemy cię do nauki języków. Ich znajomość otwiera okno na świat!
+		</p>
+	</div>
+</div>
+
+<Footer />
