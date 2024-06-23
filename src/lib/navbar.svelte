@@ -7,7 +7,7 @@
 </script>
 
 <div>
-	<div class="font-haas text-md">
+	<div class="font-sadiq text-sm text-white">
 		<nav class="container px-6 py-8 mx-auto md:flex md:justify-between md:items-center">
 			<div class="flex items-center justify-between">
 				<a class=" w-16 md:w-24 font-bold" href="/">
@@ -21,7 +21,7 @@
 							fill="none"
 							viewBox="0 0 24 24"
 							stroke-width="1.5"
-							stroke="currentColor"
+							stroke="white"
 							class="w-6 h-6"
 						>
 							<path

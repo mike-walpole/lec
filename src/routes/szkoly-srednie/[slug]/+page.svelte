@@ -1,9 +1,11 @@
 <script>
 	export let data;
+	import { PortableText } from '@portabletext/svelte';
+	import { page } from '$app/stores';
+	import { urlFor } from '$lib/utils/image';
 </script>
 
 <div class="flex flex-col max-w-5xl mx-auto mb-20">
-	<img src="Stclareslogo.png" class="w-48 mx-auto" alt="logo" />
 	<h1 class="mx-auto text-6xl font-bold font-haas ml-5">{data.nazwa}</h1>
 </div>
 
@@ -23,6 +25,14 @@
 			pedagogicznej i studentów.
 		</p>
 	</div>
+</div>
+
+<div>
+	{#if data.Subtitle1}
+		<p class="mb-10 md:mb-24 text-black">
+			<PortableText value={data.Subtitle1} />
+		</p>
+	{/if}
 </div>
 
 <div class="grid md:grid-cols-2 gap-0 md:items-center auto-rows-auto max-w-5xl mx-auto font-haas">

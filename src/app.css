@@ -14,3 +14,10 @@
     font-weight: bold;
 
 }
+
+@font-face {
+    font-family: "sadiq";
+    src: url("/sadiq.woff") format("woff");
+    font-weight: normal;
+
+}

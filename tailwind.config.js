@@ -7,7 +7,7 @@ export default {
 				haas: ['Haas', 'sans-serif'],
 				display: ['ABChanel', 'sans-serif'],
 				display2: ['Playfair', 'sans-serif'],
-				sadiq: ['Sadiq', 'sans-serif']
+				sadiq: ['sadiq', 'sans-serif']
 			}
 		}
 	},

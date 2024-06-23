@@ -18,6 +18,9 @@
 		"eslint": "^9.0.0",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-svelte": "^2.36.0",
+		"flowbite": "^2.3.0",
+		"flowbite-svelte": "^0.46.4",
+		"flowbite-svelte-icons": "^1.6.1",
 		"globals": "^15.0.0",
 		"postcss": "^8.4.38",
 		"prettier": "^3.1.1",
@@ -26,7 +29,7 @@
 		"tailwindcss": "^3.4.4",
 		"vite": "^5.0.3"
 	},
-	"type": "module", 
+	"type": "module",
 	"dependencies": {
 		"@builder.io/partytown": "^0.8.1",
 		"@portabletext/svelte": "^2.1.4",
