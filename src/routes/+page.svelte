@@ -39,7 +39,7 @@
 	<img
 		src="/hughs.avif"
 		alt="Your Image"
-		class="block sm:h-[70vh] md:h-auto md:w-full object-cover"
+		class="block h-[100vh] md:h-auto md:w-full object-cover"
 	/>
 
 	<div class="absolute flex top-0 z-50">
