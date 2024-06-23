@@ -36,14 +36,18 @@
 
 <div class="relative">
 	<!-- Image container -->
-	<img src="/hughs.avif" alt="Your Image" class="block w-full grayscale-0" />
+	<img
+		src="/hughs.avif"
+		alt="Your Image"
+		class="block sm:h-[70vh] md:h-auto md:w-full object-cover"
+	/>
 
 	<div class="absolute flex top-0 z-50">
 		<Navbar />
 	</div>
 	<!-- Overlay text container -->
 	<div class="absolute inset-0 flex items-center justify-center">
-		<div class=" text-white px-4 py-2 rounded text-6xl md:text-9xl font-sadiq text-center">
+		<div class=" text-white px-4 py-2 rounded text-5xl md:text-9xl font-sadiq text-center">
 			<!-- Your overlay text -->
 			Studiuj Angielski za granicą
 		</div>
