@@ -3,7 +3,11 @@
 	import { PortableText } from '@portabletext/svelte';
 	import { page } from '$app/stores';
 	import { urlFor } from '$lib/utils/image';
+	import Footer from '../../../lib/footer.svelte';
+	import Navbarblack from '../../../lib/navbarblack.svelte';
 </script>
+
+<Navbarblack />
 
 <div class="flex flex-col max-w-5xl mx-auto mb-20">
 	<h1 class="mx-auto text-6xl font-bold font-haas ml-5">{data.nazwa}</h1>
@@ -11,68 +15,70 @@
 
 <div class="grid md:grid-cols-2 gap-0 md:items-center auto-rows-auto max-w-5xl mx-auto font-haas">
 	<div class=" self-stretch">
-		<img src="/one.avif" alt="hero" class="w-full h-full object-cover" />
+		<img
+			class="w-full h-full object-contain"
+			src={urlFor(data.image1).width(300).height(300).format('webp').url()}
+			alt="Cover image for {data.nazwa}"
+			rel="preload"
+			as="image"
+		/>
 	</div>
 	<div class="mx-5 self-stretch">
-		<h2 class="text-2xl font-bold font-body mb-10 pt-10">Pierwsza szkoła z IB w Anglii</h2>
-		<p class="text-xl font-body mb-10">
-			Szkoła z internatem w Oxfordzie to wyjątkowa placówka edukacyjna, która odgrywa kluczową rolę
-			w kształtowaniu przyszłych liderów i wybitnych studentów. Już od 1977 roku prowadzi ona
-			program matury międzynarodowej IB, co czyni ją najstarszą tego typu szkołą w Anglii. Zaledwie
-			13 szkół na świecie rozpoczęło program IB wcześniej, co podkreśla jej prestiż i długoletnie
-			doświadczenie w edukacji międzynarodowej. Wyniki uczniów tej szkoły są konsekwentnie powyżej
-			średnich światowych, co jest dowodem na wysoki poziom nauczania oraz zaangażowanie kadry
-			pedagogicznej i studentów.
-		</p>
+		<p class="mt-5 mb-5 font-sadiq">{data.subtitle1}</p>
+		{#if data.paragraph1}
+			<p class="text-xl font-body mb-10">
+				<PortableText value={data.paragraph1} />
+			</p>
+		{/if}
 	</div>
-</div>
-
-<div>
-	{#if data.Subtitle1}
-		<p class="mb-10 md:mb-24 text-black">
-			<PortableText value={data.Subtitle1} />
-		</p>
-	{/if}
 </div>
 
 <div class="grid md:grid-cols-2 gap-0 md:items-center auto-rows-auto max-w-5xl mx-auto font-haas">
 	<div class="md:order-2 self-stretch">
-		<img src="/three.avif" alt="hero" class="w-full h-full object-cover" />
+		<img
+			class="w-full h-full object-contain"
+			src={urlFor(data.image2).width(300).height(300).format('webp').url()}
+			alt="Cover image for {data.nazwa}"
+			rel="preload"
+			as="image"
+		/>
 	</div>
 	<div class="md:order-1 mx-5 self-stretch">
-		<h2 class="text-2xl font-bold font-body mb-10 pt-10">Międzynarodowy charakter szkoły</h2>
-		<p class="text-xl font-body mb-10">
-			Ponad połowa absolwentów tej szkoły dostaje się na najbardziej prestiżowe uniwersytety w
-			Wielkiej Brytanii oraz Stanach Zjednoczonych, co świadczy o doskonałym przygotowaniu do
-			dalszej edukacji i kariery akademickiej. Uczniowie mają możliwość wyboru sześciu przedmiotów,
-			z czego trzy są nauczane na poziomie wyższym (rozszerzonym), co umożliwia im dogłębne
-			zrozumienie wybranych dziedzin i rozwijanie swoich zainteresowań. Co więcej, zajęcia z
-			literatury są oferowane w aż 25 językach, co pokazuje międzynarodowy charakter szkoły i jej
-			zaangażowanie w promowanie różnorodności kulturowej oraz językowej.
-		</p>
+		<p class="mt-5 mb-5 font-sadiq">{data.subtitle2}</p>
+		{#if data.paragraph2}
+			<p class="text-xl font-body mb-10">
+				<PortableText value={data.paragraph2} />
+			</p>
+		{/if}
 	</div>
 </div>
 
 <div class="grid md:grid-cols-2 gap-0 max-w-5xl mx-auto auto-rows-auto font-haas">
 	<div class="self-stretch">
-		<img src="/St-Clares-1.avif" alt="hero" class="w-full h-full object-cover" />
+		<img
+			class="w-full h-full object-contain"
+			src={urlFor(data.image3).width(300).height(300).format('webp').url()}
+			alt="Cover image for {data.nazwa}"
+			rel="preload"
+			as="image"
+		/>
 	</div>
 	<div class="mx-5 self-stretch">
-		<h2 class="text-2xl font-bold font-body mb-10 pt-10">Tradycja z nowoczesnym podejściem</h2>
-		<p class="text-xl font-body mb-10">
-			Szkoła z internatem w Oxfordzie to miejsce, które łączy tradycję z nowoczesnym podejściem do
-			edukacji, oferując uczniom nie tylko doskonałe przygotowanie akademickie, ale także możliwość
-			rozwoju osobistego i społecznego w międzynarodowym środowisku. Dzięki temu absolwenci tej
-			szkoły są doskonale przygotowani do podjęcia studiów na najbardziej prestiżowych
-			uniwersytetach na świecie i osiągnięcia sukcesu w wybranych dziedzinach zawodowych.
-		</p>
+		<p class="mt-5 mb-5 font-sadiq">{data.subtitle3}</p>
+		{#if data.paragraph3}
+			<p class="text-xl font-body mb-10">
+				<PortableText value={data.paragraph3} />
+			</p>
+		{/if}
+		<p class="mt-5 mb-5 font-body text-xl">Orientacyjna cena: {data.cena}</p>
+		<div class="flex mx-auto w-11/12 font-haas">
+			<a
+				href="mailto:krzysztof.banaszak@lec.com.pl"
+				class=" border hover:border-black py-2 px-4 bg-[#e60000] text-white hover:bg-white hover:text-black mx-5 w-full mt-20 text-center"
+				>Zamów bezpłatną konsultację</a
+			>
+		</div>
 	</div>
 </div>
 
-<div class="flex mx-auto w-full md:w-[50vw] font-haas">
-	<a
-		href="mailto:krzysztof.banaszak@lec.com.pl"
-		class=" border hover:border-black py-2 px-4 bg-[#e60000] text-white hover:bg-white hover:text-black mx-5 w-full mt-20 text-center"
-		>Zamów konsultację</a
-	>
-</div>
+<Footer />

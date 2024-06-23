@@ -7,7 +7,7 @@
 </script>
 
 <div>
-	<div class="font-sadiq text-sm text-white">
+	<div class="font-sadiq text-sm text-black">
 		<nav class="container px-6 py-8 mx-auto md:flex md:justify-between md:items-center">
 			<div class="flex items-center justify-between">
 				<a class=" w-16 md:w-24 font-bold" href="/">
