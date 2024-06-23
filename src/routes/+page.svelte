@@ -10,7 +10,8 @@
 		TimelineSeparator,
 		TimelineDot,
 		TimelineConnector,
-		TimelineContent
+		TimelineContent,
+		TimelineOppositeContent
 	} from 'svelte-vertical-timeline';
 
 	const options = [
@@ -49,12 +50,12 @@
 </div>
 
 <div class="max-w-5xl mx-auto mt-20 mb-10">
-	<h2 class="mx-10 font-sadiq text-4xl">Jak się mogę uczyć?</h2>
+	<h2 class="mx-5 font-sadiq text-4xl">Jak się mogę uczyć?</h2>
 </div>
 
 <div class="grid grid-cols-1 md:grid-cols-2 max-w-5xl mx-auto mt-20">
 	<div
-		class="border border-black p-2 h-64 flex flex-col justify-between shadow-lg mx-10 my-5 rounded"
+		class="border border-black p-2 h-64 flex flex-col justify-between shadow-lg mx-5 my-5 rounded"
 	>
 		<div class="w-11/12 mx-auto mt-3">
 			<h2 class="font-sadiq">Studia</h2>
@@ -62,11 +63,11 @@
 		</div>
 		<a
 			class="bg-black text-white font-sadiq text-center py-2 mb-3 w-11/12 mx-auto hover:border hover:border-black hover:text-black hover:bg-white"
-			>See now</a
+			>dowiedz się wiecej</a
 		>
 	</div>
 	<div
-		class="border border-black p-2 h-64 flex flex-col justify-between shadow-lg mx-10 my-5 rounded"
+		class="border border-black p-2 h-64 flex flex-col justify-between shadow-lg mx-5 my-5 rounded"
 	>
 		<div class="w-11/12 mx-auto mt-3">
 			<h2 class="font-sadiq">Szkoly średnie</h2>
@@ -74,11 +75,11 @@
 		</div>
 		<a
 			class="bg-black text-white font-sadiq text-center py-2 mb-3 w-11/12 mx-auto hover:border hover:border-black hover:text-black hover:bg-white"
-			>See now</a
+			>dowiedz się wiecej</a
 		>
 	</div>
 	<div
-		class="border border-black p-2 h-64 flex flex-col justify-between shadow-lg mx-10 my-5 rounded"
+		class="border border-black p-2 h-64 flex flex-col justify-between shadow-lg mx-5 my-5 rounded"
 	>
 		<div class="w-11/12 mx-auto mt-3">
 			<h2 class="font-sadiq">Kursy dla profesjonalistów</h2>
@@ -86,11 +87,11 @@
 		</div>
 		<a
 			class="bg-black text-white font-sadiq text-center py-2 mb-3 w-11/12 mx-auto hover:border hover:border-black hover:text-black hover:bg-white"
-			>See now</a
+			>dowiedz się wiecej</a
 		>
 	</div>
 	<div
-		class="border border-black p-2 h-64 flex flex-col justify-between shadow-lg mx-10 my-5 rounded"
+		class="border border-black p-2 h-64 flex flex-col justify-between shadow-lg mx-5 my-5 rounded"
 	>
 		<div class="w-11/12 mx-auto mt-3">
 			<h2 class="font-sadiq">Kursy dla młodzieźy</h2>
@@ -98,12 +99,12 @@
 		</div>
 		<a
 			class="bg-black text-white font-sadiq text-center py-2 mb-3 w-11/12 mx-auto hover:border hover:border-black hover:text-black hover:bg-white"
-			>See now</a
+			>dowiedz się wiecej</a
 		>
 	</div>
 </div>
 <div class="max-w-5xl mx-auto mt-20 mb-10">
-	<h2 class="mx-10 font-sadiq text-4xl">Co o nas mówią</h2>
+	<h2 class="mx-5 font-sadiq text-4xl">Co o nas mówią</h2>
 </div>
 
 <Card padding="none" size="xl" class="grid md:grid-cols-2 max-w-5xl mx-auto">
@@ -202,26 +203,32 @@
 </Card>
 
 <div class="max-w-5xl mx-auto mt-20 mb-10">
-	<h2 class="mx-10 md:mx-0 font-sadiq text-4xl">Jak to zacząć?</h2>
-	<h3 class="mt-5 mx-10 md:mx-0">
+	<h2 class="mx-5 md:mx-0 font-sadiq text-4xl">Jak to zacząć?</h2>
+	<h3 class="mt-5 mx-5 md:mx-0">
 		Wyjeżdżając na kurs za naszym pośrednictwem zapłacisz za niego tyle samo, co dokonując
 		rezerwacji bezpośrednio w szkole!
 	</h3>
 </div>
 
-<div class="mb-20">
+<div class="mb-20 max-w-5xl">
 	<Timeline>
 		{#each options as option}
 			<TimelineItem>
+				<TimelineOppositeContent slot="opposite-content">
+					<h3 class="font-sadiq text-lg">{option.title}</h3>
+				</TimelineOppositeContent>
 				<TimelineSeparator>
 					<TimelineDot />
 					<TimelineConnector />
 				</TimelineSeparator>
 				<TimelineContent>
-					<h3 class="font-sadiq text-lg">{option.title}</h3>
 					<p class="mb-10">{option.content}</p>
 				</TimelineContent>
 			</TimelineItem>
 		{/each}
 	</Timeline>
+</div>
+
+<div class="max-w-5xl mx-auto mt-20 mb-10">
+	<h2 class="mx-5 md:mx-0 font-sadiq text-4xl">Co na tym zyskam?</h2>
 </div>
