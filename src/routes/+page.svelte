@@ -209,17 +209,19 @@
 	</h3>
 </div>
 
-<Timeline>
-	{#each options as option}
-		<TimelineItem>
-			<TimelineSeparator>
-				<TimelineDot />
-				<TimelineConnector />
-			</TimelineSeparator>
-			<TimelineContent>
-				<h3 class="font-sadiq text-lg">{option.title}</h3>
-				<p class="mb-10">{option.content}</p>
-			</TimelineContent>
-		</TimelineItem>
-	{/each}
-</Timeline>
+<div class="mb-20">
+	<Timeline>
+		{#each options as option}
+			<TimelineItem>
+				<TimelineSeparator>
+					<TimelineDot />
+					<TimelineConnector />
+				</TimelineSeparator>
+				<TimelineContent>
+					<h3 class="font-sadiq text-lg">{option.title}</h3>
+					<p class="mb-10">{option.content}</p>
+				</TimelineContent>
+			</TimelineItem>
+		{/each}
+	</Timeline>
+</div>
