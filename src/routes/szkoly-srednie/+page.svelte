@@ -12,7 +12,10 @@
 <div class=" text-black grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
 	{#if data.posts.length}
 		{#each data.posts as post}
-			<a class="border border-gray-200 p-4" href={`/szkoly-srednie/${post.slug.current}`}>
+			<a
+				class="border border-gray-200 p-4 mx-5 md:mx-0"
+				href={`/szkoly-srednie/${post.slug.current}`}
+			>
 				<div class="relative grid grid-cols-1 mx-2">
 					<h3 class="text-xl font-sadiq mb-3 md:h-20">
 						{post.nazwa}
